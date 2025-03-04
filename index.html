@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Webhook Manager</title>
+    <link rel="stylesheet" href="op-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Telegram Webhook Manager</h2>
+        <p>Manage your Telegram bot webhooks easily</p>
+        
+        <label>Webhook URL</label>
+        <input type="text" id="webhookUrl" value="https://your-server.com/webhook">
+        
+        <label>Bot Token</label>
+        <input type="text" id="botToken" placeholder="Enter your bot token">
+        
+        <button onclick="setWebhook()">Set Webhook</button>
+        <button onclick="deleteWebhook()">Delete Webhook</button>
+
+        <p class="response" id="response">Waiting for response...</p>
+        <p class="success-alert" id="successAlert"></p>
+
+        <div class="footer">
+            <p>Created By: <a href="https://t.me/Farooq_is_king" target="_blank">@Farooq_is_king</a></p>
+        </div>
+    </div>
+
+    <script src="op-script.js"></script>
+</body>
+</html>
